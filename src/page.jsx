@@ -43,7 +43,7 @@ const Page = () => {
     const updatePage = () => {
         if (userData && !userData.message) {
             return (
-                <div className={`flex flex-col w-[327px] rounded-[15px] shadow-inpt px-6 pt-8 pb-12 overflow-hidden md:p-10 md:w-[573px] lg:w-[730px] lg:p-12 lg:flex-row lg:gap-[37px] ${theme === "dark" ? "bg-[#1E2A47]" : "bg-[#FEFEFE]"}`}>
+                <div className={`flex flex-col w-[327px] rounded-[15px] shadow-inpt px-6 pt-8 pb-12 md:p-10 md:w-[573px] lg:w-[730px] lg:p-12 lg:flex-row lg:gap-[37px] ${theme === "dark" ? "bg-[#1E2A47]" : "bg-[#FEFEFE]"}`}>
                     <div className="hidden lg:flex">
                         <img className="w-[70px] h-[70px] rounded-[50%] mr-5 md:w-[117px] md:h-[117px] md:mr-[41px]" src={userData ? userData.avatar_url : null} />
                     </div>
@@ -117,7 +117,7 @@ const Page = () => {
 
 
     return (
-        <main className={`flex items-center flex-col w-full h-[100vh] pt-[31px] px-6 font-mono md:pt-[140px] md:px-[98px] lg:pt[144px] ${theme === "dark" ? "bg-[#141D2F]" : "bg-[#F6F8FF]"}`}>
+        <main className={`flex items-center flex-col w-full min-h-screen pt-[31px] px-6 font-mono md:pt-[140px] md:px-[98px] lg:pt[144px] pb-10 ${theme === "dark" ? "bg-[#141D2F]" : "bg-[#F6F8FF]"}`}>
 
             <div className="flex w-[327px] justify-between items-center md:w-[573px] lg:w-[730px]">
                 <div><h1 className={`text-[26px] font-bold ${theme === "dark" ? "text-[#fff]" : "text-[#222731]"}`}>devfinder</h1></div>
